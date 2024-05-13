@@ -1,0 +1,34 @@
+.myprofile-form-inline {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    /* background-color: #52946b; */
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  .myprofile-component {
+    display: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 70vh; */
+    /* text-align: center; */
+  }
+  .myprofile-formItem1 {
+    width: 100%;
+    padding-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-size: 18px;
+    /* margin-right: 10px; */
+    font-family: revert;
+  }
+  .myprofile-formItem2 {
+    width: 100%;
+    padding-bottom: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-size: 18px;
+    /* margin-right: 10px; */
+    font-family: revert;
+    font-weight: bold;
+  }

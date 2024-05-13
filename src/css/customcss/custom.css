@@ -1,0 +1,58 @@
+:root {
+  --muted-red: #ff5e5b;
+  --blue-dark: #26292f;
+  --blue-light: #2c3e50;
+  --blue-sky: #186aa5;
+  --light-black: #292929;
+  --black: #000000;
+  --white: #ffffff;
+  --light-pink: #fff7f7;
+  --twine-color: #c89b51;
+  --gray: #606060;
+  --green: #48b93d;
+  --hero-banner-items-font: 12px;
+  --header-font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0px 10px;
+}
+
+.card-header-text {
+  position: absolute;
+}
+
+.MuiCardActions-root.css-1rwjz6-MuiCardActions-root {
+  position: absolute;
+  left: 240px;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  color: #f5f5f5;
+}
+
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root:hover {
+  color: #ff4400;
+}
+
+.MuiCardContent-root.css-46bh2p-MuiCardContent-root {
+  padding: 0px;
+}
+
+span.MuiTypography-root.MuiTypography-h5.MuiCardHeader-title.css-1qvr50w-MuiTypography-root {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+span.MuiTypography-root.MuiTypography-body1.MuiCardHeader-subheader.css-nrdprl-MuiTypography-root {
+  font-size: 14px;
+}

@@ -1,0 +1,103 @@
+.editprofile-form-inline {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  /* background-color: #52946b; */
+  /* margin: 10px; */
+}
+/* signup Form Container */
+.editprofile-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+}
+
+/* Form Styles */
+.editprofile-form-container {
+  width: 100%;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+}
+
+/* Form Fields */
+.editprofile-form-field {
+  margin-bottom: 15px;
+  width: 48%;
+}
+
+.editprofile-formItem {
+  width: 100%;
+  padding-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  font-size: 16px;
+  /* margin-right: 10px; */
+}
+.editprofile-formItems {
+  width: 40%;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Error Messages */
+.error-message-editprofile-formItem {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Sign Up Link */
+.editprofile-to-login-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #007bff; /* Blue color */
+}
+
+
+.editprofile-button {
+  /* width: 100%; */
+  padding: 10px;
+  background-color: #FF7220; /* Blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.confirmpassword-button {
+  width: 50%;
+  padding: 10px;
+  background-color: #FF7220;; /* Blue color */
+  color: #ffffff;;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.editprofile-inline-button {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.editprofile-button:hover {
+  background-color: #FF7220;; /* Darker blue color on hover */
+}
+
+.editprofile-inline-elements {
+  width: 48%;
+  display: inline-flex;
+  justify-content: space-around;
+  /* background-color: #007bff; */
+}
