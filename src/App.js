@@ -42,8 +42,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      
-      
+
+
         <div>
           <SelectUser isOpen={modal} />
           {/* <Login isOpenLogin={loginModal} /> */}
@@ -57,20 +57,20 @@ function App() {
           {/* -----------------------------LANDING LAYOUT------------------------------- */}
           <Route to="/" element={<LandingLayout />}>
             <Route index element={<LandingPage />} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/signup" element={<Signup/>}/>
-              <Route path="/myaccount" element={<MyProfile />}></Route>
-                <Route path="/myaccount/myprofile" element={<MyProfile />}/>
-                <Route path="/myaccount/myprofile/editprofile" element={<EditProfile />}/>
-                <Route path="/myaccount/ordermanagement" element={<OrderManagement />} />
-                <Route path="/myaccount/favouriteitem" element={<FavouriteItem />} />
-                <Route path="/myaccount/bidhistory" element={<BidHistory />} />
-                <Route path="/myaccount/myauctions" element={<MyAuctions />} />
-                <Route path="/myaccount/payments" element={<Payments />} />
-                <Route path="/myaccount/changepassword" element={<ChangePassword />} />
-                <Route path="/myaccount/notification" element={<Notification />} />
-                <Route path="/myaccount/deleteaccount" element={<DeleteAccount />} />
-             
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/myaccount" element={<MyProfile />}></Route>
+            <Route path="/myaccount/myprofile" element={<MyProfile />} />
+            <Route path="/myaccount/myprofile/editprofile" element={<EditProfile />} />
+            <Route path="/myaccount/ordermanagement" element={<OrderManagement />} />
+            <Route path="/myaccount/favouriteitem" element={<FavouriteItem />} />
+            <Route path="/myaccount/bidhistory" element={<BidHistory />} />
+            <Route path="/myaccount/myauctions" element={<MyAuctions />} />
+            <Route path="/myaccount/payments" element={<Payments />} />
+            <Route path="/myaccount/changepassword" element={<ChangePassword />} />
+            <Route path="/myaccount/notification" element={<Notification />} />
+            <Route path="/myaccount/deleteaccount" element={<DeleteAccount />} />
+
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/contactus" element={<Contactus />} />
             <Route path="/products" element={<Products />} />
@@ -108,8 +108,8 @@ function App() {
           </Route> */}
         </Routes>
       </BrowserRouter>
-      <Footer/>
-      <ToastContainer/>
+      <Footer />
+      <ToastContainer />
     </>
   );
 }
