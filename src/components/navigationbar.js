@@ -2,9 +2,11 @@ import React from "react";
 import { HandleOpenLogin, HandleOpenmodel } from ".././services/modalService";
 import { useDispatch } from "react-redux";
 import logo from "../images/dealfoxlogo.svg"
+import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   return (
     <nav style={{margin:"10px"}}className="navbar navbar-expand-lg navbar-light bg-light">
@@ -70,7 +72,7 @@ const NavigationBar = () => {
             <li>
               <a style={{fontFamily:"unset"}}
                 className="btn btn-dark"
-                onClick={() => HandleOpenLogin(dispatch)}
+                onClick={()=>navigate("/login")}
                 aria-current="page"
               >
                 Login
@@ -79,7 +81,7 @@ const NavigationBar = () => {
             <li>
               <a style={{fontFamily:"unset"}}
                 className="btn btn-dark"
-                onClick={() => HandleOpenmodel(dispatch)}
+                onClick={() => navigate("/signup")}
                 aria-current="page"
               >
                 Signup

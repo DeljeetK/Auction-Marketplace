@@ -46,12 +46,12 @@ const Signup = ({ isOpenSignup }) => {
   };
 
   return (
-    <Modal
-      isOpen={isOpenSignup}
-      // onAfterOpen={afterOpenModal}
-      // onRequestClose={closeModal}
-      contentLabel="Example Modal"
-    >
+    // <Modal
+    //   isOpen={isOpenSignup}
+    //   // onAfterOpen={afterOpenModal}
+    //   // onRequestClose={closeModal}
+    //   contentLabel="Example Modal"
+    // >
       <div className="container">
         <Formik
           initialValues={{
@@ -230,7 +230,7 @@ const Signup = ({ isOpenSignup }) => {
           )}
         </Formik>
       </div>
-    </Modal>
+    // </Modal>
   );
 };
 

@@ -3,11 +3,8 @@ import React from "react";
 
 const Searchbar = () => {
   return (
-<<<<<<< HEAD
     <div  style={{display: "flex", width: "60%", content: "center" , marginLeft:"20%" , marginTop:"20px", marginBottom:"20px" , borderColor:"white" }}>
-=======
     <div style={{display:"flex", width: "60%", content: "center" , marginLeft:"20%" , marginTop:"20px", marginBottom:"20px" , borderColor:"white" }}>
->>>>>>> origin/master
       <input
         style={{ borderRadius: "10px"  }}
         type="search"
@@ -30,6 +27,7 @@ const Searchbar = () => {
       >
         search
       </button>
+      </div>
     </div>
   );
 };

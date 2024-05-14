@@ -58,6 +58,7 @@ function App() {
           <Route to="/" element={<LandingLayout />}>
             <Route index element={<LandingPage />} />
             <Route path="/login" element={<Login/>} />
+            <Route path="/signup" element={<Signup/>}/>
               <Route path="/myaccount" element={<MyProfile />}></Route>
                 <Route path="/myaccount/myprofile" element={<MyProfile />}/>
                 <Route path="/myaccount/myprofile/editprofile" element={<EditProfile />}/>
