@@ -91,7 +91,7 @@ const Login = ({ isOpenLogin }) => {
                 </button>
               </div>
               <button type="submit" className="signup-button">
-                SignUp
+                Login
               </button>
             </Form>
           )}

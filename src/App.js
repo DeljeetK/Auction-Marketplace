@@ -46,8 +46,8 @@ function App() {
       
         <div>
           <SelectUser isOpen={modal} />
-          <Login isOpenLogin={loginModal} />
-          <Signup isOpenSignup={signupModal} />
+          {/* <Login isOpenLogin={loginModal} /> */}
+          {/* <Signup isOpenSignup={signupModal} /> */}
           <EmailVerify isOpenEmailVerify={emailVerifyModal} />
         </div>
         {/* <Elements stripe={stripePromise}>
@@ -57,6 +57,7 @@ function App() {
           {/* -----------------------------LANDING LAYOUT------------------------------- */}
           <Route to="/" element={<LandingLayout />}>
             <Route index element={<LandingPage />} />
+            <Route path="/login" element={<Login/>} />
               <Route path="/myaccount" element={<MyProfile />}></Route>
                 <Route path="/myaccount/myprofile" element={<MyProfile />}/>
                 <Route path="/myaccount/myprofile/editprofile" element={<EditProfile />}/>
