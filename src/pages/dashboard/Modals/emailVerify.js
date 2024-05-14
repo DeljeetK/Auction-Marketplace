@@ -26,12 +26,11 @@ const EmailVerify = ({ isOpenEmailVerify }) => {
         },
         header
       );
-
       console.log(response, "this is response");
-      if (response.data.statusCode == 200) {
+      if (response.status == 200) {
         toast.success("Email verified successfully", toastOptions);
         HandleCloseEmailVerify(dispatch);
-        navigate("/");
+        navigate("/login")
       }
     } catch (error) {
       console.log(error);
