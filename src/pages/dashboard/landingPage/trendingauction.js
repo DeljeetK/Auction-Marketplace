@@ -225,7 +225,6 @@ const TrendingAuction = () => {
             Heat 1/2 cup of the broth in a pot until simmering, add saffron and
             set aside for 10 minutes.
           </Typography>
-
           <Typography paragraph>
             Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet
             over medium-high heat. Add chicken, shrimp and chorizo, and cook,
