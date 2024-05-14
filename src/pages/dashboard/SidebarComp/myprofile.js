@@ -10,33 +10,34 @@ import Searchbar from "../../../components/searchbar";
 const MyProfile = (props) => {
   const [data, setData] = useState({});
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const userId = localStorage.getItem("userId");
-        const token = localStorage.getItem("token");
+  const fetchData = async () => {
+    try {
+      const userId = localStorage.getItem("userId");
+      const token = localStorage.getItem("token");
 
-        if (!token) {
-          console.log("Not Getting Token");
-          return;
-        }
-
-        const headerResponse = await axios.get(
-          `http://localhost:3001/header/${userId}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-        setData(headerResponse.data.userDetails);
-      } catch (error) {
-        console.error("Error fetching data:", error);
+      if (!token) {
+        console.log("Not Getting Token");
+        return;
       }
-    };
+      const headerResponse = await axios.get(
+        `http://localhost:4567/auth/user?id=${userId}`,
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      console.log('...........datauser', headerResponse.data.data  )
+      setData(headerResponse.data.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, []);
+
 
   return (
     <div>
@@ -59,14 +60,15 @@ const MyProfile = (props) => {
                   <label className="myprofile-formItem1">
                     {data.firstName}
                   </label>
-                  <label className="myprofile-formItem2">Phoneno</label>
+   
+                  <label className="myprofile-formItem2">Phoneno </label>
                 </div>
                 <div className="myprofile-component">
-                  <label className="myprofile-formItem1">Email</label>
+                  <label className="myprofile-formItem1">{data.email}</label>
                   <label className="myprofile-formItem2">-</label>
                 </div>
                 <div className="myprofile-component">
-                  <label className="myprofile-formItem1">Address</label>
+                  <label className="myprofile-formItem1">{data.city} {data.country} {data.postalCode}</label>
                   <label className="myprofile-formItem2">-</label>
                 </div>
               </div>

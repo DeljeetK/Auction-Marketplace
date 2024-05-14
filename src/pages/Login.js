@@ -27,6 +27,9 @@ const Login = ({ isOpenLogin }) => {
       if (result.payload) {
         HandleCloseLogin(dispatch);
         // HandleOpenEmailVerify(dispatch);
+        console.log('................', result.payload.data)
+        localStorage.setItem('token', result.payload.data.token);
+        localStorage.setItem("userId", result.payload.data.userId)
         toast.success("Login successful", toastOptions);
         navigate("/products");
       } else {
@@ -42,61 +45,61 @@ const Login = ({ isOpenLogin }) => {
     //   // onRequestClose={closeModal}
     //   contentLabel = "Example Modal"
     // >
-      <div className="container">
-        <Formik
-          initialValues={{
-            email: "",
-            password: "",
-          }}
-          validationSchema={loginSchema}
-          onSubmit={handleSubmit}
-        >
-          {({ values, handleChange }) => (
-            <Form className="signup-form-container">
-              <h1>Welcome to dealfox</h1>
-              <button
-                type="button"
-                onClick={() => HandleCloseLogin(dispatch)}
-                className="btn-close"
-                aria-label="Close"
-              ></button>
-              <div className="signup-form-field">
-                <label htmlFor="email" className="signup-formItem">
-                  Email
-                </label>
-                <Field type="text" name="email" className="signup-formItem" />
-                <ErrorMessage
-                  name="email"
-                  component="div"
-                  className="error-message-signup-formItem"
-                />
-              </div>
+    <div className="container">
+      <Formik
+        initialValues={{
+          email: "",
+          password: "",
+        }}
+        validationSchema={loginSchema}
+        onSubmit={handleSubmit}
+      >
+        {({ values, handleChange }) => (
+          <Form className="signup-form-container">
+            <h1>Welcome to dealfox</h1>
+            <button
+              type="button"
+              onClick={() => HandleCloseLogin(dispatch)}
+              className="btn-close"
+              aria-label="Close"
+            ></button>
+            <div className="signup-form-field">
+              <label htmlFor="email" className="signup-formItem">
+                Email
+              </label>
+              <Field type="text" name="email" className="signup-formItem" />
+              <ErrorMessage
+                name="email"
+                component="div"
+                className="error-message-signup-formItem"
+              />
+            </div>
 
-              <div className="signup-form-field">
-                <label htmlFor="password" className="signup-formItem">
-                  Password
-                </label>
-                <Field
-                  type={showPassword ? "text" : "password"}
-                  name="password"
-                  className="signup-formItem"
-                />
-                <ErrorMessage
-                  name="password"
-                  component="div"
-                  className="error-message-signup-formItem"
-                />
-                <button type="button" className="eye" onClick={togglePassword}>
-                  {showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
-                </button>
-              </div>
-              <button type="submit" className="signup-button">
-                Login
+            <div className="signup-form-field">
+              <label htmlFor="password" className="signup-formItem">
+                Password
+              </label>
+              <Field
+                type={showPassword ? "text" : "password"}
+                name="password"
+                className="signup-formItem"
+              />
+              <ErrorMessage
+                name="password"
+                component="div"
+                className="error-message-signup-formItem"
+              />
+              <button type="button" className="eye" onClick={togglePassword}>
+                {showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
               </button>
-            </Form>
-          )}
-        </Formik>
-      </div>
+            </div>
+            <button type="submit" className="signup-button">
+              Login
+            </button>
+          </Form>
+        )}
+      </Formik>
+    </div>
 
   );
 };
