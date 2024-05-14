@@ -40,7 +40,7 @@ const Signup = ({ isOpenSignup }) => {
         toast.success("Signup successful", toastOptions);
         console.log(openEmail, "this is the value of email open");
       } else {
-        toast.console.error(("Email already exists", toastOptions));
+        toast.error("Email already exists", toastOptions);
       }
     });
   };
