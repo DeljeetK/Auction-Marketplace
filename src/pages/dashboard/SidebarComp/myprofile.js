@@ -27,7 +27,7 @@ const MyProfile = (props) => {
           },
         }
       );
-      console.log('...........datauser', headerResponse.data.data  )
+      // console.log('...........datauser', headerResponse.data.data  )
       setData(headerResponse.data.data);
     } catch (error) {
       console.error("Error fetching data:", error);

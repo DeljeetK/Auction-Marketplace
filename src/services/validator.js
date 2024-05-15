@@ -54,7 +54,7 @@ export const editProfileSchema = yup.object({
     .string()
     .email("Invalid email format")
     .required("Email is required!!"),
-  phoneNo: yup.string().required("Phone no is required!!"),
+  phoneNo: yup.string(),
   address: yup.string().required("Address is required!!"),
   postalCode: yup.number().required("postal code is required!!"),
 });
